@@ -1,0 +1,354 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Jost',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color:#eee7df;
+    --main-color:#dbcbbe;
+    --2nd-main-color:#b0988e;
+    --text-color:#000;
+    --text2-color:#ABDED7;
+    --green-blue:#4d8581;
+    --span-color:#194f68;
+    --big-font:5rem;
+    --h2-font:1.9rem;
+    --p-font:1rem;
+}
+
+body{
+    background:var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: var(--bg-color);
+    padding: 24px 14%;
+    transition: .3s;
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+span{
+    color:var(--span-color);
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    background-color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 28px;
+    z-index:1001;
+    cursor:pointer;
+    display: none;
+}
+
+section{
+    padding:120px 14%;
+    max-width: 1024px;
+    width: 95%;
+    margin: auto;
+}
+.home{
+    position:relative;
+    display:block;
+    align-items: center;
+    text-align: center;
+    background-color: var(--2nd-main-color);
+}
+.home-img img{
+    margin-top: 120px;
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 20%;
+    border: .5rem solid var(--span-color);
+}
+
+
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    font-weight: 700;
+    line-height: 1;
+    margin: 15px 0 20px;
+}
+
+.home-text h6{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+
+.btn{
+    background:var(--main-color);
+    color: var(--text-color);
+    box-shadow: 4px 4px var(--text-color);
+    padding:0 25px;
+    line-height: 42px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: var(--text-color);
+    color:var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+.about{
+    background-color: white;
+}
+.education{
+    background-color:var(--2nd-main-color)
+}
+.contact{
+    background-color: white;
+}
+
+
+.title{
+    text-align: center;
+
+}
+
+.title h3{
+    color:var(--text-color);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    margin-top: 4.2rem;
+}
+.info th{
+    text-align: left;
+    width: 60%;
+}
+.info td{
+    overflow-wrap: anywhere;
+}
+.intro-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-gap:3rem;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+
+.education-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-gap:2rem;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+
+.row{
+    background:var(--green-blue);
+    padding: 60px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .40s;
+}
+
+
+
+.row h3{
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.row p{
+    font-size: 18px;
+    color: var(--2nd-main-color);
+    line-height: 30px;
+}
+
+.row:hover{
+    transform: translate(-15px);
+    box-shadow: 0px 15px 30px 0px rgb(0 0 0/70%);
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.2rem;
+}
+
+.contact-form form{
+    position: relative;
+    width: 550px;
+
+}
+
+form input[type=text],
+form input[type=email],
+form textarea{
+    width: 100%;
+    padding:20px;
+    border: none;
+    outline: none;
+    background:var(--text2-color);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color:var(--2nd-main-color);
+}
+
+.choice{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #0b0b13;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--text2-color);
+}
+
+.hidden{
+    display:none;
+}
+
+
+textarea{
+    resize: none;
+    height: 150px;
+
+}
+
+form .send-btn{
+    background:var(--main-color);
+    color: var(--text-color);
+    box-shadow: 4px 4px var(--text-color);
+    padding:0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+form .send-btn:hover{
+    background-color: var(--text-color);
+    color:var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+
+.copyright{
+    text-align: center;
+    padding: 30px;
+    color: var(--2nd-main-color);
+    background: #0b0b13;
+    margin-top: 3rem;
+    line-height: 1.8rem;
+}
+
+
+@media (max-width:1020px){
+    :root{
+        --big-font:3rem;
+        --h2-font:1.2rem;
+        --p-font:0.9rem;
+    }
+
+}
+
+@media (max-width:830px){
+    header{
+        padding:18px 3%;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--green-blue);
+        box-shadow: 0px 15px 30px 0px rgb(0 0 0/70%);
+        text-align: left;
+        transform: 0.2s ease;
+    }
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+    }
+    .navbar.active{
+        top:100%;
+    }
+}
+
+@media (max-width: 795px){
+    .home{
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        text-align: center;
+        margin-top: 80px;
+        
+    }
+  
+    .home-text img{
+        max-width: 30%;
+        width: 10rem;
+
+        height: 10rem;
+    }
+
+}
+
+@media (max-width:400px){
+    .home-text img{
+        max-width: 30%;
+        width: 5rem;
+
+        height: 5rem;
+    }
+}

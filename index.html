@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Youwei'Qin</title>
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!--Header-->
+<header>
+    <a href="#" class="logo">HELLO <span>WORLD</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+<!--Start home-->
+<section class="home" id="home">
+    <div class="home-img">
+        <img src="./photo.PNG" alt="photo">
+    </div>
+    <div class="home-text">
+
+        <h1>Youwei Qin</h1>
+        <h6>Web Designer & <span>Front End Developer</span></h6>
+     
+        <a class="btn" href="./YouweiQin - resume.pdf" download>Download CV</a>
+        
+        <a href="#contact" class="btn">CONTACT ME</a>
+    </div>
+
+
+</section>
+
+<!--Introduction-->
+<section class="about" id="about">
+    <div class="title">
+        <h3>About Me</h3></div>
+        <div class="intro-details">
+            <div class="row">
+                <h3>Basic Information</h3>
+               <table class="info">
+                   <tr>
+                       <th>AGE:</th>
+                       <td>28</td>
+                   </tr>
+                   <tr>
+                       <th>EMAIL:</th>
+                       <td>yqin39@myseneca.ca</td>
+                   </tr>
+                   <tr>
+                       <th>LANGUAGE:</th>
+                       <td>Chinese,English</td>
+                   </tr>
+                   <tr>
+                       <th>COURSE:</th>
+                       <td>WEB222</td>
+                   </tr>
+                   <tr>
+                    <th>SECTION:</th>
+                    <td>NHH</td>
+                   </tr>
+                   <tr>
+                       <th>STUDENT ID:</th>
+                       <td>149770216</td>
+                   </tr>
+                   <tr>
+                      <th> INSTRUCTOR:</th>
+                      <td>
+                          Prof. Muath Alzghool
+                      </td>
+                   </tr>
+                   
+               </table>
+            </div>
+         
+            
+            <div class="row">
+                <h3>Seneca Academic Honesty Statment</h3>
+                <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+                <br><span>Date: April.12.2022</span>
+                </p>
+            </div>
+         
+
+        </div>
+    
+</section>
+
+
+<!--Education-->
+<section class="education" id="education">
+    <div class="title">
+        <h3>My Education</h3></div>
+        <div class="education-details">
+            <div class="row">
+             
+                <h3>McMaster University</h3>
+                <P>Maths & Stats<br><span>2012-2014</span></P>
+            </div>
+            <div class="row">
+              
+                <h3>Mohawk College</h3>
+                <P>Financial Services Industry<br><span>2014-2017</span></P>
+            </div>
+            
+            <div class="row">
+                
+                <h3>Seneca COLLEGE</h3>
+                <P>Computer Programming<br><span>2021-</span></P>
+            </div> 
+        </div>
+    
+</section>
+
+<!--contact-->
+<section class="contact" id="contact">
+<div class="title">
+    <h3>CONTACT ME</h3>
+</div>
+<div class="contact-form">
+    <form action="https://httpbin.org/post" method="post" >
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Email Address" >
+        <input type="text" name="address" placeholder="Your Address">
+        <input type="text" name="phone" placeholder="Phone Number">
+     
+        <input type="text" list="city-list" id="city" name="city" placeholder="City" />
+        
+        <datalist id="city-list">
+            <option value="Toronto">
+            <option value="Richmond Hill">
+            <option value="Scarborough">
+            <option value="North York">
+            <option value="Missisauga">
+            <option value="Oakville">
+            <option value="Hamilton">
+            <option value="London">
+            <option value="Whitby">
+            <option value="Markham">
+        </datalist>
+        
+        <div>
+            <input type="text" placeholder="Postal Code"
+            pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]">
+        </div>
+
+        <p>Please select one of the options:</p>
+        <div>
+            <div class="choice"><input type="radio" id="Choice1"
+                name="choice" onclick="handleClick(this);" value="1">
+               <label for="Choice1">Question</label></div>
+          
+      <div class="choice">
+          <input type="radio" id="choice2"
+        name="choice" onclick="handleClick(this);" value="2">
+       <label for="choice2">Comment</label>
+    </div>
+       <div class="choice"> 
+           <input type="radio" id="choice3"
+        name="choice" onclick="handleClick(this);" value="3">
+       <label for="choice3">Hiring</label>
+    </div>
+          
+      <div class="hidden" id="hourly-rate">
+          <input type="text" name="hiring rate" id="hiring" placeholder="Please enter the hourly rate">
+      </div>
+         
+        </div>
+        
+        
+        
+        <textarea cols="30" rows="10" placeholder="Brief message"></textarea>
+        <input type="submit" name="" value="Send" class="send-btn">
+       
+    </form>
+</div>
+</section>
+
+<!--copyright-->
+<div class="copyright">
+    <p>copyright © by Youwei Qin</p>
+</div>
+
+<!--Link to js-->
+<script src="./app.js"></script>
+
+</body>
+</html>
